@@ -75,6 +75,7 @@ export class AppComponent {
 | `lang`      | `string`                                                                       | `'en'`  | N        | Event listener called on every open/close action                              |
 | `tier`      | `int`                                                                       | `null`  | N        | Tier is a simply way to divide your workflow into small pieces. It is very useful when you offer different features based on the verification level of your customer.  [More info](https://docs.synaps.io/manager-1/apps/individual/tiers)                           |
 | `color`      | `{primary : string, secondary: string}`                                                                     | `null`  | N        | You can set a primary color and a secondary color, it will create a verification flow tailored to your compliance needs and your brand. |
+| `withFinishButton`      | `False`                                                                     | `null`  | N        | This will add a button close at the end of the flow this button will trigger an event finish. |
 | `ready`             | `event`                                                                                           | `null` | N        | Event listener called when the page is fully loaded                                       |
 | `finish`   | `event`                                                                                           | `null` | N        | Event listener called when the user finished verification                     |
 

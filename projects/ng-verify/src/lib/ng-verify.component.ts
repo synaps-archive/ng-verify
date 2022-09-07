@@ -35,16 +35,18 @@ export class NgVerifyComponent implements OnChanges, AfterViewInit {
  @Input() color?: Color
  @Input() lang?: string
  @Input() tier?: number
+ @Input() withFinishButton?: boolean
   constructor() {}
   get url() {
-    const { sessionId, service, color, lang, tier } = this;
-      const params: Record<string, string | undefined | number> = {
+    const { sessionId, service, color, lang, tier, withFinishButton } = this;
+      const params: Record<string, string | undefined | number | boolean> = {
         service,
         session_id: sessionId,
         primary_color: color ? color.primary : undefined,
         secondary: color ? color.secondary : undefined,
         lang: lang ? lang : "en",
         tier: tier ? tier : undefined,
+        with_finish_button: withFinishButton,
       }
       const url =  `${serviceUrl[service]}?${Object.keys(params)
         .reduce((acc: string[], key: string): string[] => {

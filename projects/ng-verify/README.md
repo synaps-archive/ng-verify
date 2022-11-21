@@ -80,7 +80,7 @@ export class AppComponent {
 | `finish`   | `event`                                                                                           | `null` | N        | Event listener called when the user finished verification                     |
 
 ## Examples
-[![Edit angular-verify](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/angular-verify-5oe1bu?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit angular-verify](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/embed/angular-verify-forked-27qyg4?fontsize=14&hidenavigation=1&theme=dark)
 ## License
 
 Apache 2.0 © [Synaps](https://www.synaps.io/)
